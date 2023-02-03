@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 303df34f78dea0748a47d232e1e4a7a3, type: 3}
+  m_Name: StarAnimationCfg
+  m_EditorClassIdentifier: 
+  Sequences:
+  - Track: 0
+    Sprites:
+    - {fileID: 692321478, guid: a1672d111bca7344dbcb8d505e8aa57e, type: 3}
+    - {fileID: -280160025, guid: a1672d111bca7344dbcb8d505e8aa57e, type: 3}
+    - {fileID: 1669513429, guid: a1672d111bca7344dbcb8d505e8aa57e, type: 3}
+    - {fileID: 737554172, guid: a1672d111bca7344dbcb8d505e8aa57e, type: 3}
+    - {fileID: -2005252562, guid: a1672d111bca7344dbcb8d505e8aa57e, type: 3}
+    - {fileID: -985559806, guid: a1672d111bca7344dbcb8d505e8aa57e, type: 3}
+    - {fileID: 1428982987, guid: a1672d111bca7344dbcb8d505e8aa57e, type: 3}
+    - {fileID: -1873102487, guid: a1672d111bca7344dbcb8d505e8aa57e, type: 3}
+    - {fileID: -428656327, guid: a1672d111bca7344dbcb8d505e8aa57e, type: 3}
+    - {fileID: -1111196938, guid: a1672d111bca7344dbcb8d505e8aa57e, type: 3}

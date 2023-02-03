@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 303df34f78dea0748a47d232e1e4a7a3, type: 3}
+  m_Name: KidsAnimation
+  m_EditorClassIdentifier: 
+  Sequences:
+  - Track: 7
+    Sprites:
+    - {fileID: 21300000, guid: ff9bf1aa0bcac8d4c8846b9dc535bb87, type: 3}
+    - {fileID: 21300000, guid: 8fa5aa530cad0eb41bf3190791d67e89, type: 3}
+    - {fileID: 21300000, guid: 61935afaae4e6aa4d8bdae59f6c31f74, type: 3}
+    - {fileID: 21300000, guid: 6dd0b54a6a17a9146b923dcc172b49ab, type: 3}
+    - {fileID: 21300000, guid: 28851adfb086f3b4eb8f4d27f415d2dd, type: 3}
+    - {fileID: 21300000, guid: 8a1586c427b1312408e2d1680621c23f, type: 3}
+    - {fileID: 21300000, guid: f1d8e31b23c39524cb8d57631bc73223, type: 3}
+    - {fileID: 21300000, guid: 97b18506fe487534b8c190105b52ccdb, type: 3}
+  - Track: 8
+    Sprites:
+    - {fileID: 21300000, guid: 2990348de952597409770a9a891a30be, type: 3}
+    - {fileID: 21300000, guid: 133c1ff5aa52012429cd37eb664c37a6, type: 3}
+    - {fileID: 21300000, guid: bcff58d62458a7743a377e23b30ea404, type: 3}
+    - {fileID: 21300000, guid: a4764aea45328134895dca5254678134, type: 3}
+  - Track: 6
+    Sprites:
+    - {fileID: 21300000, guid: 11a938a75bbdcd446bdbae764bfcee3f, type: 3}
+    - {fileID: 21300000, guid: 0a7a8a0821486ff44becc01586f50692, type: 3}
+    - {fileID: 21300000, guid: 86d26899e56a4a2489401123ab99db48, type: 3}
+    - {fileID: 21300000, guid: ad5ca0a47054bc34caa721588cac411b, type: 3}
+    - {fileID: 21300000, guid: 233aa5f970edc4643b567f5e17d68928, type: 3}
+    - {fileID: 21300000, guid: 8b71374e11051274cad4060dbe35221b, type: 3}
+    - {fileID: 21300000, guid: 52c940aa5ea72cb48a5135e039f21548, type: 3}
+    - {fileID: 21300000, guid: 6ba49115e08fb8f4993d83ff131344ff, type: 3}
+  - Track: 9
+    Sprites:
+    - {fileID: 21300000, guid: dbd2875abf110994aadeb1183d172b48, type: 3}
+    - {fileID: 21300000, guid: 603f775c66059f942bcd5c70db574596, type: 3}
+    - {fileID: 21300000, guid: 3f8410d5a1e2c5a4cb703120db4c525e, type: 3}
+    - {fileID: 21300000, guid: 29efa695e51321840b19ab1452b51176, type: 3}

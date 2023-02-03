@@ -1,0 +1,920 @@
+fileFormatVersion: 2
+guid: e8bec6a285853b6439823e3710a5750b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Yeti0-2_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1079
+        width: 100
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9fd7c79ef9867a488cb5c48c83b4555
+      internalID: 594590907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_1
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 1079
+        width: 100
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6856748f95bdb943babaa5fcf71dd50
+      internalID: 1747579422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_2
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 1079
+        width: 100
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21338babff265ee4fb96775e858995f2
+      internalID: 2003751950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_3
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 922
+        width: 104
+        height: 111
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6f858bd2693a24499accdd6fcc6f4a
+      internalID: -1327561075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_4
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 922
+        width: 112
+        height: 111
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eddec728bf8bcaa4e9239c23df871544
+      internalID: 314667430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_5
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 922
+        width: 100
+        height: 111
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd3dec9081d90147bced60fe744ffcc
+      internalID: 1993092314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_6
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 922
+        width: 121
+        height: 111
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad77f1b65ab9cc43af296e4eb73d950
+      internalID: 2121750687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 702
+        width: 129
+        height: 187
+      alignment: 9
+      pivot: {x: 0.59, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af45e5f6c3b1484a8f7001e3f931797
+      internalID: -1284669761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_8
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 702
+        width: 129
+        height: 187
+      alignment: 9
+      pivot: {x: 0.59, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddea5d1563932c64a8c3b7b8730ba147
+      internalID: -1341838590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_9
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 702
+        width: 132
+        height: 187
+      alignment: 9
+      pivot: {x: 0.6, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fed71683ce358b45b6b0458c26151a4
+      internalID: -1893551791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_10
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 702
+        width: 105
+        height: 187
+      alignment: 9
+      pivot: {x: 0.5, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d3ff9389820d943988d932b4ae5234
+      internalID: -253734456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_11
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 702
+        width: 210
+        height: 187
+      alignment: 9
+      pivot: {x: 0.75, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ddcad553f64864a988527250a60c23
+      internalID: -1032876110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_15
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 579
+        width: 219
+        height: 96
+      alignment: 9
+      pivot: {x: 0.76, y: 0.57}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb394bdd354a21140b02e14f44dae346
+      internalID: -143783543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_17
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 579
+        width: 223
+        height: 96
+      alignment: 9
+      pivot: {x: 0.767, y: 0.57}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8fa195d072cda478ac4e3d8098facf
+      internalID: -215983487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_18
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 579
+        width: 215
+        height: 96
+      alignment: 9
+      pivot: {x: 0.76, y: 0.57}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f4ebb9f74d08b4ebba03c8fb030158
+      internalID: -1364994516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_19
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 579
+        width: 175
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.57}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2854297bf2d94947b5fa126587d5bbd
+      internalID: 189159439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_26
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 438
+        width: 135
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eca34dad4c104e409c4b0b4d5af8863
+      internalID: -12523307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_28
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 438
+        width: 135
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4270a20323bd1b4a82f1f72c5e76a29
+      internalID: 2056895230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_53
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 438
+        width: 135
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c096c8db310af4845814f0ca776555a2
+      internalID: -2035939335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_57
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 294
+        width: 100
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3139d590fa51ab46babd93a40de2081
+      internalID: -607325323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_58
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 294
+        width: 100
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74cdc9f1d01f87e428de9cb10856a56c
+      internalID: 1178327148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_59
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 294
+        width: 99
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab549052a248aaa4599ba9647874337a
+      internalID: 807909390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_60
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 294
+        width: 101
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a49e7b3d65c3294d8492c4aa094dd75
+      internalID: -713097513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_61
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 294
+        width: 100
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e65dedd3b34833341aabdd6a22b8586f
+      internalID: 1552737258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_62
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 294
+        width: 100
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd747c43553e8684a8b1db1a6550e516
+      internalID: 994252712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_63
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 143
+        width: 105
+        height: 117
+      alignment: 9
+      pivot: {x: 0.5, y: 0.52}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7045c11b400f07942b640eb8ff7fada0
+      internalID: -1915581294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_64
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 143
+        width: 105
+        height: 117
+      alignment: 9
+      pivot: {x: 0.5, y: 0.52}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81290300229fb324b9f9149764321b28
+      internalID: -1363656717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_65
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 7
+        width: 100
+        height: 107
+      alignment: 9
+      pivot: {x: 0.55, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baec1ec9b5ad4704494767c52f60bb00
+      internalID: 1342704450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_66
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 7
+        width: 113
+        height: 107
+      alignment: 9
+      pivot: {x: 0.58, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6196c1cb2f4e249a95c6e74bc6dd16
+      internalID: 1304937729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_67
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 7
+        width: 115
+        height: 107
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04655419fd7b4748938d5a1f12f8614
+      internalID: 404107456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_68
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 7
+        width: 174
+        height: 107
+      alignment: 9
+      pivot: {x: 0.61, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a394528720e6e4c4c84c8675e11a75ec
+      internalID: -17935726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_69
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 7
+        width: 172
+        height: 107
+      alignment: 9
+      pivot: {x: 0.59, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d17d6f4557c16f49b3dda9192531f15
+      internalID: 1643281850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_70
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 7
+        width: 170
+        height: 107
+      alignment: 9
+      pivot: {x: 0.57, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a616429f1620d49badb44ee534f7f7
+      internalID: -1796682770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yeti0-2_71
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 7
+        width: 170
+        height: 107
+      alignment: 9
+      pivot: {x: 0.55, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300540bd7c5877f42a57570615af5f9f
+      internalID: 1628332043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Yeti0-2_18: -1364994516
+      Yeti0-2_40: 1266512763
+      Yeti0-2_62: 994252712
+      Yeti0-2_61: 1552737258
+      Yeti0-2_56: 1631766118
+      Yeti0-2_68: -17935726
+      Yeti0-2_50: -1074443978
+      Yeti0-2_57: -607325323
+      Yeti0-2_20: 1055744542
+      Yeti0-2_27: 1000295989
+      Yeti0-2_69: 1643281850
+      Yeti0-2_29: -1468824168
+      Yeti0-2_31: -135806759
+      Yeti0-2_19: 189159439
+      Yeti0-2_53: -2035939335
+      Yeti0-2_63: -1915581294
+      Yeti0-2_41: -1535004955
+      Yeti0-2_46: 747335875
+      Yeti0-2_59: 807909390
+      Yeti0-2_25: -432609255
+      Yeti0-2_10: -253734456
+      Yeti0-2_60: -713097513
+      Yeti0-2_11: -1032876110
+      Yeti0-2_44: 160702538
+      Yeti0-2_55: 2077252586
+      Yeti0-2_65: 1342704450
+      Yeti0-2_71: 1628332043
+      Yeti0-2_48: -1939022187
+      Yeti0-2_0: 594590907
+      Yeti0-2_15: -143783543
+      Yeti0-2_28: 2056895230
+      Yeti0-2_12: -872151773
+      Yeti0-2_37: -1496684252
+      Yeti0-2_49: -2108136666
+      Yeti0-2_70: -1796682770
+      Yeti0-2_51: -1467521616
+      Yeti0-2_14: -2098374869
+      Yeti0-2_9: -1893551791
+      Yeti0-2_1: 1747579422
+      Yeti0-2_2: 2003751950
+      Yeti0-2_33: 1764148769
+      Yeti0-2_38: 188722139
+      Yeti0-2_42: 1594146523
+      Yeti0-2_30: -1690625203
+      Yeti0-2_52: -285356660
+      Yeti0-2_6: 2121750687
+      Yeti0-2_39: 1109949497
+      Yeti0-2_22: 774401635
+      Yeti0-2_24: -1508988893
+      Yeti0-2_23: 577229899
+      Yeti0-2_35: -950964565
+      Yeti0-2_43: 403137906
+      Yeti0-2_26: -12523307
+      Yeti0-2_47: -835046263
+      Yeti0-2_45: 1676669729
+      Yeti0-2_67: 404107456
+      Yeti0-2_54: 1309472277
+      Yeti0-2_36: -1569210313
+      Yeti0-2_64: -1363656717
+      Yeti0-2_13: 609206706
+      Yeti0-2_5: 1993092314
+      Yeti0-2_4: 314667430
+      Yeti0-2_16: 337337510
+      Yeti0-2_21: 1590465212
+      Yeti0-2_32: 781794695
+      Yeti0-2_7: -1284669761
+      Yeti0-2_8: -1341838590
+      Yeti0-2_17: -215983487
+      Yeti0-2_3: -1327561075
+      Yeti0-2_34: 1169526281
+      Yeti0-2_58: 1178327148
+      Yeti0-2_66: 1304937729
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
