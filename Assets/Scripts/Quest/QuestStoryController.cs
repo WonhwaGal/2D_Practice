@@ -40,9 +40,21 @@ namespace PlatformerMVC
                 quest.Reset();
             }
         }
+        private void FullReset(int index)
+        {
+            if (index < 0 || index >= _questCollection.Count)
+            {
+                return;
+            }
+            _questCollection[index].Reset();
+        }
         private void OnQuestCompleted(object sender, IQuest quest)
         {
             int index = _questCollection.IndexOf(quest);
+            if (index != _questCollection.IndexOf(_questCollection[^1])) 
+            {
+                FullReset(_questCollection.IndexOf(_questCollection[^1]));
+            } 
             if (IsDone)
             {
                 ProgresReport?.Invoke(_questCollection.IndexOf(_questCollection[^1]));
@@ -50,9 +62,7 @@ namespace PlatformerMVC
             else
             {
                 ProgresReport?.Invoke(index);
-                //Reset(++index);
             }
-
         }
         public void Dispose()
         {

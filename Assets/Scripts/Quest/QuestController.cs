@@ -1,5 +1,4 @@
 using System;
-using UnityEngine;
 
 namespace PlatformerMVC
 {
@@ -23,6 +22,7 @@ namespace PlatformerMVC
         {
             if (_active) return;
             _active = true;
+            IsCompleted = false;
             _playerView.OnQuestComplete += OnContact;
             _questView.ProcessActivate();
         }
