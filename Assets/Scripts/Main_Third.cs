@@ -1,4 +1,3 @@
-using Pathfinding;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,8 +13,6 @@ namespace PlatformerMVC
         [SerializeField] private List<PlatformView> _platformViews;
         [SerializeField] private List<RestartObjView> _restartingObjs;
         [SerializeField] private QuestView _questView;
-
-        [SerializeField] private AIDestinationSetter _aIDestinationSetter;
 
         private PlayerView _playerView;
         private PlayerRbController _playerController;
@@ -34,8 +31,6 @@ namespace PlatformerMVC
             _playerView = Instantiate(Resources.Load<PlayerView>("Player"), _startPos.position, Quaternion.identity);
             _playerController = new PlayerRbController(_playerView);
             _camManager = new CamManager(_playerView, 2.5f, 1.0f, 190.0f, 19.0f, 2.0f, 4.0f);
-
-            _aIDestinationSetter.target = _playerView._transform;
 
             _coinsManager = new CoinsManager(_playerView, _coinViews);
             List<LevelObjectView> _starViews = _winZoneViews.GetRange(0, _winZoneViews.Count - 1);

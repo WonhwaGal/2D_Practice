@@ -13,7 +13,6 @@ namespace PlatformerMVC
         [SerializeField] private List<PlatformView> _platformViews;
         [SerializeField] private List<RestartObjView> _restartingObjs;
 
-        [SerializeField] private QuestObjectView _singleQuestItem;
         [SerializeField] private QuestView _questView;
 
         private PlayerView _playerView;
@@ -28,7 +27,6 @@ namespace PlatformerMVC
         private FlagManager _flagManager;
         private UIController _UIController;
 
-        private QuestController _questController;
         private QuestConfiguratorController _questConfiguratorController;
         private void Awake()
         {
@@ -48,8 +46,6 @@ namespace PlatformerMVC
             UIView canvas = Instantiate(Resources.Load<UIView>("Canvas"));
             _UIController = new UIController(_playerController, _playerView, canvas);
 
-            _questController = new QuestController(_playerView, _singleQuestItem, new QuestCoinModel());
-            _questController.Reset();
             _questConfiguratorController = new QuestConfiguratorController(_questView, _playerView, _UIController);
             _questConfiguratorController.Start();
         }
