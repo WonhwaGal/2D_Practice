@@ -5,12 +5,12 @@ namespace PlatformerMVC
 {
     public class KidsManager
     {
-        private int speed = 10;
-        private float _threshold = -0.1f;
-        private float _moveTreshold = 0.5f;
+        private const int speed = 10;
+        private const float _threshold = -0.1f;
+        private const float _moveTreshold = 0.5f;
 
         AnimationConfig _config;
-        private List<KidsView> _views;
+        private readonly List<KidsView> _views;
         private SpriteAnimationController _animationController;
         public KidsManager(List<KidsView> _views)
         {

@@ -13,7 +13,7 @@ namespace PlatformerMVC
         private int _xDir = 1;
         private int _currentPointIndex;
         private bool playerCloseToAttack;
-        private float _Ythreshold = 4.5f;
+        private const float _Ythreshold = 4.5f;
 
         public int XDir { get => _xDir; set => _xDir = value; }
         public Transform Target { get => _target; set => _target = value; }

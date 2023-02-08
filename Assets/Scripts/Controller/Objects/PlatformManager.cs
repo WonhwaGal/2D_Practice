@@ -5,7 +5,7 @@ namespace PlatformerMVC
 {
     public sealed class PlatformManager
     {
-        private List<PlatformView> _platformViews;
+        private readonly List<PlatformView> _platformViews;
         public PlatformManager(List<PlatformView> _platformViews)
         {
             this._platformViews = _platformViews;
@@ -26,7 +26,9 @@ namespace PlatformerMVC
                         view._index = 0;
                     }
                 }
-                view._transform.position = Vector2.MoveTowards(view._transform.position, view.points[view._index].position, Time.deltaTime * view._speed);
+                view._transform.position = Vector2.MoveTowards(view._transform.position, 
+                                                               view.points[view._index].position, 
+                                                               Time.deltaTime * view._speed);
             }
         }
     }

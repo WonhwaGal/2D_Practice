@@ -4,9 +4,9 @@ namespace PlatformerMVC
 {
     public class AimingMuzzle
     {
-        Transform _muzzleTransform;
-        Transform _aimTransform;
-        Vector3 downShift = new Vector3(0,-5,0);
+        private Transform _muzzleTransform;
+        private Transform _aimTransform;
+        private Vector3 downShift = new Vector3(0,-5,0);
         public AimingMuzzle(Transform muzzleTransform, Transform aimTransform)
         {
             _muzzleTransform = muzzleTransform;

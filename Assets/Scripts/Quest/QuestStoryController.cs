@@ -1,14 +1,13 @@
 using System;
 using System.Linq;
 using System.Collections.Generic;
-using UnityEngine;
 
 namespace PlatformerMVC
 {
     public class QuestStoryController : IQuestStory
     {
         public Action<int> ProgresReport { get; set; }
-        private List<IQuest> _questCollection = new List<IQuest>();
+        private readonly List<IQuest> _questCollection;
         public bool IsDone => _questCollection.All(value => value.IsCompleted);
 
         public QuestStoryController(List<IQuest> questCollection)

@@ -5,8 +5,8 @@ namespace PlatformerMVC
 {
     public class EnemyAI : IDisposable
     {
-        private EnemyView _enemyView;
-        private EnemyModel _model;
+        private readonly EnemyView _enemyView;
+        private readonly EnemyModel _model;
 
         private Vector3 _startPos;
         public bool _attackMode;
@@ -83,7 +83,6 @@ namespace PlatformerMVC
         private void GoToInitialPos()
         {
             _enemyView._rb.velocity = _model.GoToInitialPoint(_enemyView.transform.position, _startPos) * Time.fixedDeltaTime;
-            //_attackMode = false;
             _dieMode = false;
             if (Vector2.SqrMagnitude(_startPos - _enemyView.transform.position) < 1.0f)
             {
@@ -97,14 +96,12 @@ namespace PlatformerMVC
         }
         private void GoPatrol()
         {
-            //_attackMode = false;
             _dieMode = false;
             var newVelocity = _model.CalculateVelocity(_enemyView._transform.position) * Time.fixedDeltaTime;
             _enemyView._rb.velocity = newVelocity;
         }
         private void ChasePlayer()
         {
-            //_attackMode = false;
             _idleMode = false;
             _dieMode = false;
             _enemyView._rb.velocity = _model.CalculateChaseVelocity(_enemyView.transform.position) * Time.fixedDeltaTime;

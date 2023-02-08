@@ -5,22 +5,22 @@ namespace PlatformerMVC
 {
     public class GeneratorController
     {
-        private Tilemap _tilemap;
-        public Tilemap _snowTilemap;
-        public Tile _snowTile;
-        private Tile _tile;
-        private Tile _rightTile;
-        private Tile _leftTile;
-        private Tile _topTile;
-        public Tile _cornerBottomRight;
-        public Tile _cornerBottomleftt;
-        public Tile _cornerUpRight;
-        public Tile _cornerUpLeft;
-        private int _mapHeight;
-        private int _mapWidth;
+        private readonly Tilemap _tilemap;
+        public readonly Tilemap _snowTilemap;
+        public readonly Tile _snowTile;
+        private readonly Tile _tile;
+        private readonly Tile _rightTile;
+        private readonly Tile _leftTile;
+        private readonly Tile _topTile;
+        public readonly Tile _cornerBottomRight;
+        public readonly Tile _cornerBottomleftt;
+        public readonly Tile _cornerUpRight;
+        public readonly Tile _cornerUpLeft;
+        private readonly int _mapHeight;
+        private readonly int _mapWidth;
 
-        private int _fillPercent;
-        private int _smoothPercent;
+        private readonly int _fillPercent;
+        private readonly int _smoothPercent;
 
         private bool _borders;
         private int[,] _map;

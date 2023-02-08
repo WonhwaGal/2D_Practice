@@ -161,12 +161,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transform: {fileID: 6709707490611758905}
   _spriteRenderer: {fileID: 6709707490611758904}
-  _collider: {fileID: 0}
-  _rb: {fileID: 0}
+  _collider: {fileID: 6709707490611758910}
+  _rb: {fileID: 6709707490611758909}
+  _attackCollider: {fileID: 6709707489985942455}
+  _initialTurnToRight: 1
   _leftScale: {x: 0, y: 0, z: 0}
   _rightScale: {x: 0, y: 0, z: 0}
   _lastScale: {x: 0, y: 0, z: 0}
-  _initialTurnToRight: 1
 --- !u!61 &6709707490611758910
 BoxCollider2D:
   m_ObjectHideFlags: 0

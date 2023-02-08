@@ -10,8 +10,8 @@ namespace PlatformerMVC
 
         private int _index;
         private float _timeTillNextBull;
-        private float _startSpeed = 8;
-        private float _delay = 5;
+        private const float _startSpeed = 8;
+        private const float _delay = 5;
         public EmitterController(List<BullView> bulletViews, Transform emitterTr)
         {
             _tr = emitterTr;

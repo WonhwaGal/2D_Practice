@@ -7,9 +7,9 @@ namespace PlatformerMVC
     public class CoinsManager : IDisposable
     {
         private const float _animationsSpeed = 10;
-        private PlayerView _characterView;
+        private readonly PlayerView _characterView;
         private SpriteAnimationController _spriteAnimator;
-        private List<LevelObjectView> _coinViews;
+        private readonly List<LevelObjectView> _coinViews;
         private AnimationConfig _coinConfig;
 
         private AudioSource _audioSource;

@@ -5,7 +5,7 @@ namespace PlatformerMVC
     public class BullController
     {
         private Vector3 _velocity;
-        private BullView _view;
+        private readonly BullView _view;
 
         public BullController(BullView view)
         {

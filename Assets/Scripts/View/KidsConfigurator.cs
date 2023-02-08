@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace PlatformerMVC
@@ -8,13 +9,12 @@ namespace PlatformerMVC
         [SerializeField] private List<AIConfig> _simplePatrolAIConfigs;
         [SerializeField] private List<KidsView> _simplePatrolAIViews;
         [SerializeField] private LayerMask _layerMask;
-        #region Fields
+ 
         private List<SimplePatrolAI> _simplePatrolAIs = new List<SimplePatrolAI>();
         private Transform _playerT;
         private KidsManager _kidsManager;
-        #endregion
 
-        #region Unity methods
+
         private void Start()
         {
             int numberOfKids = _simplePatrolAIViews.Count;
@@ -34,12 +34,14 @@ namespace PlatformerMVC
                 }
             }
             _kidsManager = new KidsManager(_simplePatrolAIViews);
-            
         }
 
         private void Update()
         {
-            _kidsManager.Update();
+            if (_simplePatrolAIViews.Any(value => value._shouldAct))
+            {
+                _kidsManager.Update();
+            } 
         }
         private void FixedUpdate()
         {
@@ -48,7 +50,6 @@ namespace PlatformerMVC
                 if (aiConfig != null) aiConfig.FixedUpdate();
             }
         }
-        #endregion
     }
 
 }

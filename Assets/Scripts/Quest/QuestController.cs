@@ -4,10 +4,10 @@ namespace PlatformerMVC
 {
     public class QuestController : IQuest
     {
-        private PlayerView _playerView;
+        private readonly PlayerView _playerView;
         private bool _active;
-        private IQuestModel _model;
-        private QuestObjectView _questView;
+        private readonly IQuestModel _model;
+        private readonly QuestObjectView _questView;
 
         public event EventHandler<IQuest> QuestCompleted;
         public bool IsCompleted { get; private set; }

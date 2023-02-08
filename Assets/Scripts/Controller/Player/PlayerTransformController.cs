@@ -13,18 +13,18 @@ namespace PlatformerMVC
 
         private bool _isJump;
         private bool _isSlide;
-        private float _walkSpeed = 3f;
-        private float _animationSpeed = 10f;
-        private float _movingTreshold = 0.1f;
+        private const float _walkSpeed = 3f;
+        private const float _animationSpeed = 10f;
+        private const float _movingTreshold = 0.1f;
 
         private Vector3 _leftScale = new Vector3(-0.8f, 0.8f, 0.8f);
         private Vector3 _rightScale = new Vector3(0.8f, 0.8f, 0.8f);
 
         private bool _isMoving;
 
-        private float _jumpForce = 9f;
-        private float _jumpTreshold = 1f;
-        private float _g = -9.8f;
+        private const float _jumpForce = 9f;
+        private const float _jumpTreshold = 1f;
+        private const float _g = -9.8f;
         private float _groundLevel = 1f;
         private float _yVelocity = 0;
         private float _xAxisInput;

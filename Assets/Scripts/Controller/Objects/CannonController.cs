@@ -4,8 +4,8 @@ namespace PlatformerMVC
 {
     public class CannonController
     {
-        private Transform _muzzleT;
-        private Transform _target;
+        private readonly Transform _muzzleT;
+        private readonly Transform _target;
         private Vector3 _upShift = new Vector3(0, 1.0f, 0);
 
         private Vector3 _dir;

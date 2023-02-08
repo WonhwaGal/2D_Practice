@@ -58,11 +58,7 @@ namespace PlatformerMVC
             _starManager.Update();
             _platformManager.Update();
 
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                if (Time.timeScale == 1.0f) _UIController.PauseGame();
-                else _UIController.UnpauseGame();
-            }
+            _UIController.Update();
         }
         private void OnDisable()
         {
@@ -72,6 +68,7 @@ namespace PlatformerMVC
             _levelCompleteManager.Dispose();
             _flagManager.Dispose();
             _UIController.Dispose();
+            _questConfiguratorController.Dispose();
         }
     }
 }

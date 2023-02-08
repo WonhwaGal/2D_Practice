@@ -7,16 +7,16 @@ namespace PlatformerMVC
 {
     public class QuestConfiguratorController : IDisposable
     {
-        private QuestObjectView _singleQuestView;
+        private readonly QuestObjectView _singleQuestView;
         private QuestController _singleQuestController;
-        private QuestStoryConfig[] _questStoryConfig;
-        private QuestObjectView[] _storyQuestViews;
-        private QuestStarModel _questStarModel;
-        private QuestCoinModel _questCoinModel;
+        private readonly QuestStoryConfig[] _questStoryConfig;
+        private readonly QuestObjectView[] _storyQuestViews;
+        private readonly QuestStarModel _questStarModel;
+        private readonly QuestCoinModel _questCoinModel;
 
         private List<IQuestStory> _questStoryList;
-        private PlayerView _playerView;
-        private UIController _uiManager;
+        private readonly PlayerView _playerView;
+        private readonly UIController _uiManager;
         private Dictionary<QuestType, Func<IQuestModel>> _questFactory = new Dictionary<QuestType, Func<IQuestModel>>(10);
         private Dictionary<StoryType, Func<List<IQuest>, IQuestStory>> _storyFactory = new Dictionary<StoryType, Func<List<IQuest>, IQuestStory>>(10);
 

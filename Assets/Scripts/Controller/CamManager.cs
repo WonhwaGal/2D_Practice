@@ -4,25 +4,25 @@ namespace PlatformerMVC
 {
     public class CamManager
     {
-        private float _moveSpeed = 4;
-        private Transform _player;
+        private readonly float _moveSpeed;
+        private readonly Transform _player;
         private Transform _mainCamT;
         private Vector3 _startPos;
         private Vector3 _newPos;
         Vector3 moveVector;
 
         private float currentYPos;
-        private float _YMax;
-        private float _YMin;
+        private readonly float _YMax;
+        private readonly float _YMin;
         
         public float _xShift;
         public float _yShift;
-        private float _changeShiftPoint;
-        private float _raceLength = 40.0f;
-        private float _shiftLength;
-        private float _endPos;
-        private float _startShift;
-        private float _shiftInEnd = -6.0f;
+        private readonly float _changeShiftPoint;
+        private const float _raceLength = 40.0f;
+        private readonly float _shiftLength;
+        private readonly float _endPos;
+        private readonly float _startShift;
+        private const float _shiftInEnd = -6.0f;
 
         public CamManager(PlayerView _playerView, float xShift, float yShift, float endPos, float YMax, float YMin, float speed)
         {

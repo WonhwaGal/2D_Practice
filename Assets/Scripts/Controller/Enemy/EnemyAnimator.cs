@@ -15,11 +15,11 @@ namespace PlatformerMVC
     {
         public Action<SpriteRenderer, AnimState> OnPlayingOffAnimation { get; set; }
 
-        private List<EnemyView> _levelObjectViews;
-        private SpriteAnimationController _animationController;
-        AnimationConfig _config;
+        private readonly List<EnemyView> _levelObjectViews;
+        private readonly SpriteAnimationController _animationController;
+        private readonly AnimationConfig _config;
         private bool _loop;
-        private float _moveTreshold = 0.2f;
+        private const float _moveTreshold = 0.2f;
 
         private bool _delayAction = false;
         private float _delay;

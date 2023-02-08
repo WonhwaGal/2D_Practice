@@ -4,8 +4,8 @@ namespace PlatformerMVC
 {
     public class ContactPooler
     {
-        private Collider2D _collider;
-        private Collider2D _headCollider;
+        private readonly Collider2D _collider;
+        private readonly Collider2D _headCollider;
         private ContactPoint2D[] _contact = new ContactPoint2D[5];
         private ContactPoint2D[] _headContact = new ContactPoint2D[3];
         private int _contactCount = 0;

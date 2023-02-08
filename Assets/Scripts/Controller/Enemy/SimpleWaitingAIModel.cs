@@ -5,12 +5,12 @@ namespace PlatformerMVC
     public class SimpleWaitingAIModel
     {
         #region Fields
-        private Transform _fromPos;
-        private Transform _target;
+        private readonly Transform _fromPos;
+        private readonly Transform _target;
         private Vector2 direction;
         private readonly AIConfig _config;
         private Vector3 _yShift = new Vector3(0, -1, 0);
-        private LayerMask _layerMask;
+        private readonly LayerMask _layerMask;
         #endregion
 
         public SimpleWaitingAIModel(Transform fromPos, Transform target, AIConfig config, LayerMask layerMask)

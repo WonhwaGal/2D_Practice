@@ -7,9 +7,9 @@ namespace PlatformerMVC
     public class StarManager : IDisposable
     {
         private const float _animSpeed = 10f;
-        private PlayerView _playerView;
+        private readonly PlayerView _playerView;
         private SpriteAnimationController _spriteAnimator;
-        private List<LevelObjectView> _starViews;
+        private readonly List<LevelObjectView> _starViews;
         private AnimationConfig _starConfig;
 
         private AudioSource _audioSource;

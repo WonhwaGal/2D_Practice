@@ -11,15 +11,15 @@ namespace PlatformerMVC
     {
         public Action OnCollectingAllStars { get; set; }
 
-        private List<GameObject> _stars;
-        private List<GameObject> _hearts;
+        private readonly List<GameObject> _stars;
+        private readonly List<GameObject> _hearts;
 
-        private GameObject _menuPanel;
-        private List<Button> _levels;
+        private readonly GameObject _menuPanel;
+        private readonly List<Button> _levels;
 
-        private GameObject _gameOverPanel;
-        private Button _goMenuButton;
-        private Button _exitButton;
+        private readonly GameObject _gameOverPanel;
+        private readonly Button _goMenuButton;
+        private readonly Button _exitButton;
 
         private TextMeshProUGUI _scoreText;
 
@@ -30,11 +30,11 @@ namespace PlatformerMVC
 
         private TextMeshProUGUI _resultText;
         private TextMeshProUGUI _goToMenuText;
-        private GameObject _loseImage;
-        private GameObject _winImage;
+        private readonly GameObject _loseImage;
+        private readonly GameObject _winImage;
 
-        private PlayerRbController _characterControl;
-        private PlayerView _characterView;
+        private readonly PlayerRbController _characterControl;
+        private readonly PlayerView _characterView;
         private AudioSource _audioSource;
         private AudioClip _audioClip;
 
@@ -65,16 +65,10 @@ namespace PlatformerMVC
             _scoreText.text = "0";
 
             AsignButtons();
-            if (!ReloadScript.Instance.LoadMenu)
-            {
-                _menuPanel.SetActive(false);
-                Time.timeScale = 1.0f;
-            }
-            else
-            {
-                _menuPanel.SetActive(true);
-                Time.timeScale = 0.0f;
-            }
+
+            if (!ReloadScript.Instance.LoadMenu) _menuPanel.SetActive(false);
+            else _menuPanel.SetActive(true);
+
             _gameOverPanel.SetActive(false);
             _characterControl.onLosing += GameOver;
             _characterView.onGettingHurt += MinusHeart;
@@ -84,6 +78,14 @@ namespace PlatformerMVC
             if (view.TryGetComponent<AudioSource>(out _audioSource))
             {
                 _audioClip = Resources.Load<AudioClip>("button");
+            }
+        }
+        public void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                if (Time.timeScale == 1.0f) PauseGame();
+                else UnpauseGame();
             }
         }
         private void GameOver()
@@ -178,7 +180,7 @@ namespace PlatformerMVC
                 _scoreText.text = _coinScores[_currentLevel].ToString();
             }
         }
-        public void PauseGame()
+        private void PauseGame()
         {
             _gameOverPanel.SetActive(true);
             Time.timeScale = 0.0f;
@@ -186,7 +188,7 @@ namespace PlatformerMVC
             _loseImage?.SetActive(false);
             _resultText.text = "Чтобы вернуться, нажми ESC";
         }
-        public void UnpauseGame()
+        private void UnpauseGame()
         {
             _gameOverPanel.SetActive(false);
             Time.timeScale = 1.0f;
@@ -208,6 +210,7 @@ namespace PlatformerMVC
                     }
                     else
                     {
+                        Time.timeScale = 1.0f;
                         ReloadScript.Instance.LoadMenu = false;
                         SceneManager.LoadScene(_sceneToLoadIndex);
                     }
@@ -244,21 +247,7 @@ namespace PlatformerMVC
             {
                 int _sceneToLoadIndex = i;
                 if (!_coinScores.ContainsKey(_sceneToLoadIndex)) _coinScores.Add(_sceneToLoadIndex, 0);
-                //_levels[i].onClick.AddListener(() =>                   // Button function
-                //{
-                //    _audioSource.PlayOneShot(_audioClip);
-                //    if (_sceneToLoadIndex == SceneManager.GetActiveScene().buildIndex && ReloadScript.Instance.LoadMenu)
-                //    {
-                //        _menuPanel.SetActive(false);
-                //        Time.timeScale = 1.0f;
-                //        ReloadScript.Instance.LoadMenu = false;
-                //    }
-                //    else
-                //    {
-                //        ReloadScript.Instance.LoadMenu = false;
-                //        SceneManager.LoadScene(_sceneToLoadIndex);
-                //    }
-                //});
+
                 if (_sceneToLoadIndex <= ReloadScript.Instance.HighestLevel)           // Score
                 {
                     _levels[i].interactable = true;

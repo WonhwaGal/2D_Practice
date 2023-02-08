@@ -5,8 +5,8 @@ namespace PlatformerMVC
 {
     public sealed class FlagManager: IDisposable
     {
-        private PlayerView _characterView;
-        private List<LevelObjectView> _flags;
+        private readonly PlayerView _characterView;
+        private readonly List<LevelObjectView> _flags;
         public FlagManager(PlayerView characterView, List<LevelObjectView> flags)
         {
             _characterView = characterView;

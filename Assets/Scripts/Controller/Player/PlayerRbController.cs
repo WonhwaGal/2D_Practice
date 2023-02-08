@@ -9,7 +9,7 @@ namespace PlatformerMVC
         private AnimationConfig _config;
         private SpriteAnimationController _playerAnimator;
         private ContactPooler _contactPooler;
-        private PlayerView _playerView;
+        private readonly PlayerView _playerView;
 
         private Transform _playerT;
         private GameObject _playerHeadCollider;
@@ -17,17 +17,17 @@ namespace PlatformerMVC
 
         private bool _isJump;
         private bool _isSlide;
-        private float _walkSpeed = 180f;
-        private float _animationSpeed = 10f;
-        private float _movingTreshold = 0.1f;
+        private const float _walkSpeed = 180f;
+        private const float _animationSpeed = 10f;
+        private const float _movingTreshold = 0.1f;
 
         private Vector3 _leftScale;
         private Vector3 _rightScale;
 
         private bool _isMoving;
 
-        private float _jumpForce = 7f;
-        private float _jumpTreshold = 5f;
+        private const float _jumpForce = 7f;
+        private const float _jumpTreshold = 5f;
         private float _yVelocity = 0;
         private float _xVelocity = 0;
         private float _xAxisInput;
@@ -43,7 +43,7 @@ namespace PlatformerMVC
         private float _startJumpY;
         private float _endJumpY;
         private float _jumpLength;
-        private float _maxFallTime = 0.82f;
+        private const float _maxFallTime = 0.82f;
 
         private AudioSource _audioSource;
         private AudioClip _audioClip;
@@ -243,6 +243,7 @@ namespace PlatformerMVC
         {
             _playerView.TakeDamage -= TakeBullet;
             _playerView.onTouchingDeathZone -= DeathZoneTouch;
+            _playerView.onGettingPancaked -= GetPancaked;
             _playerAnimator.Dispose();
         }
     }

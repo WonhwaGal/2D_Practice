@@ -62,11 +62,7 @@ namespace PlatformerMVC
             _starManager.Update();
             _platformManager.Update();
 
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                 if (Time.timeScale == 1.0f) _UIController.PauseGame();
-                 else _UIController.UnpauseGame();
-            }
+            _UIController.Update();
         }
         private void OnDestroy()
         {

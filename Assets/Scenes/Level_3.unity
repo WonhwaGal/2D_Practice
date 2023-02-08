@@ -28182,12 +28182,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transform: {fileID: 1362349645}
   _spriteRenderer: {fileID: 1362349650}
-  _collider: {fileID: 0}
-  _rb: {fileID: 0}
+  _collider: {fileID: 1362349648}
+  _rb: {fileID: 1362349646}
+  _attackCollider: {fileID: 662237721}
+  _initialTurnToRight: 0
   _leftScale: {x: 0, y: 0, z: 0}
   _rightScale: {x: 0, y: 0, z: 0}
   _lastScale: {x: 0, y: 0, z: 0}
-  _initialTurnToRight: 0
 --- !u!212 &1362349650
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29392,12 +29393,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transform: {fileID: 1704055469}
   _spriteRenderer: {fileID: 1704055468}
-  _collider: {fileID: 0}
-  _rb: {fileID: 0}
+  _collider: {fileID: 1704055466}
+  _rb: {fileID: 1704055465}
+  _attackCollider: {fileID: 1044579875}
+  _initialTurnToRight: 1
   _leftScale: {x: 0, y: 0, z: 0}
   _rightScale: {x: 0, y: 0, z: 0}
   _lastScale: {x: 0, y: 0, z: 0}
-  _initialTurnToRight: 1
 --- !u!61 &1704055471
 BoxCollider2D:
   m_ObjectHideFlags: 0

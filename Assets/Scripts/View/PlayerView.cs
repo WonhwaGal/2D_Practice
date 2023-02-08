@@ -7,7 +7,6 @@ namespace PlatformerMVC
     {
         public Collider2D _headCollider;
         private Vector3 _startPos;
-
         public Action<LevelObjectView> OnLevelObjectContact { get; set; }
         public Action<BullView> TakeDamage { get; set; }
         public Action<LevelObjectView> OnCollectingCoin { get; set; }
