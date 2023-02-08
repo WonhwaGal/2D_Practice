@@ -111,8 +111,16 @@ namespace PlatformerMVC
         }
         private void Win()
         {
-            _resultText.text = "Ура!!!";
-            _goToMenuText.text = "Дальше";
+            if (_currentLevel == _levels.Count - 1)
+            {
+                _resultText.text = "Отлично! Игра пройдена!";
+                _goToMenuText.text = "Меню";
+            }
+            else
+            {
+                _resultText.text = "Ура!!!";
+                _goToMenuText.text = "Дальше";
+            }
             _gameOverPanel.SetActive(true);
             _winImage.SetActive(true);
             _loseImage.SetActive(false);

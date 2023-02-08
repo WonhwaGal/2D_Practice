@@ -348,7 +348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6709707490611758905, guid: 48addec079990304fb0fdd06f49b6a6d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.83
+      value: 6.28
       objectReference: {fileID: 0}
     - target: {fileID: 6709707490611758905, guid: 48addec079990304fb0fdd06f49b6a6d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1660,6 +1660,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1806155293}
     m_Modifications:
     - target: {fileID: 7635356086136317378, guid: 0ceff3985a0907948bbfc5b5e0e156fb, type: 3}
+      propertyPath: _pushForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7635356086136317378, guid: 0ceff3985a0907948bbfc5b5e0e156fb, type: 3}
       propertyPath: _throwToRight
       value: 1
       objectReference: {fileID: 0}
@@ -1734,6 +1738,26 @@ PrefabInstance:
     - target: {fileID: 7635356086136317387, guid: 0ceff3985a0907948bbfc5b5e0e156fb, type: 3}
       propertyPath: m_Name
       value: Crate (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7635356087622066994, guid: 0ceff3985a0907948bbfc5b5e0e156fb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 7635356087622066995, guid: 0ceff3985a0907948bbfc5b5e0e156fb, type: 3}
+      propertyPath: m_Size.x
+      value: 0.67772186
+      objectReference: {fileID: 0}
+    - target: {fileID: 7635356087622066995, guid: 0ceff3985a0907948bbfc5b5e0e156fb, type: 3}
+      propertyPath: m_Size.y
+      value: 0.16004288
+      objectReference: {fileID: 0}
+    - target: {fileID: 7635356087622066995, guid: 0ceff3985a0907948bbfc5b5e0e156fb, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0074076504
+      objectReference: {fileID: 0}
+    - target: {fileID: 7635356087622066995, guid: 0ceff3985a0907948bbfc5b5e0e156fb, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.38366586
       objectReference: {fileID: 0}
     - target: {fileID: 7635356087622066997, guid: 0ceff3985a0907948bbfc5b5e0e156fb, type: 3}
       propertyPath: m_Name
@@ -8533,7 +8557,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1143507168}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.4, y: 3.56, z: 0.075613126}
+  m_LocalPosition: {x: -3.8, y: 3.56, z: 0.075613126}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -37121,6 +37145,7 @@ MonoBehaviour:
   _rb: {fileID: 8011059925291658445}
   _childObject: {fileID: 2028072608}
   _throwToRight: 0
+  _pushForce: 5
 --- !u!61 &8011059925291658442
 BoxCollider2D:
   m_ObjectHideFlags: 0
