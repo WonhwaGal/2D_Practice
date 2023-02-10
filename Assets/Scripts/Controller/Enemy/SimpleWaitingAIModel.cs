@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace PlatformerMVC
 {
-    public class SimpleWaitingAIModel
+    public sealed class SimpleWaitingAIModel
     {
         #region Fields
         private readonly Transform _fromPos;

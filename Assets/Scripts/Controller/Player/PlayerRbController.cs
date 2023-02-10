@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace PlatformerMVC
 {
-    public class PlayerRbController : IDisposable
+    public sealed class PlayerRbController : IDisposable
     {
         public Action onLosing;
         private AnimationConfig _config;

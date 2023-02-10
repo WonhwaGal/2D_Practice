@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace PlatformerMVC
 {
-    public class KidsManager
+    public sealed class KidsManager
     {
         private const int speed = 10;
         private const float _threshold = -0.1f;

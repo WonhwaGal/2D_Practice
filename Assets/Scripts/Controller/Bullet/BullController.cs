@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace PlatformerMVC
 {
-    public class BullController
+    public sealed class BullController
     {
         private Vector3 _velocity;
         private readonly BullView _view;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace PlatformerMVC
 {
-    public class StarManager : IDisposable
+    public sealed class StarManager : IDisposable
     {
         private const float _animSpeed = 10f;
         private readonly PlayerView _playerView;

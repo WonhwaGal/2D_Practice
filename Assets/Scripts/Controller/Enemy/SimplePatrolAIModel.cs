@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace PlatformerMVC
 {
-    public class SimplePatrolAIModel
+    public sealed class SimplePatrolAIModel
     {
         #region Fields
         private readonly AIConfig _config;

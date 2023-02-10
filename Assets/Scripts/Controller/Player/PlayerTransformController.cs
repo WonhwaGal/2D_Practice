@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace PlatformerMVC
 {
-    public class PlayerTransformController
+    public sealed class PlayerTransformController
     {
         private AnimationConfig _config;
         private SpriteAnimationController _playerAnimator;

@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace PlatformerMVC
 {
-    public class AimingMuzzle
+    public sealed class AimingMuzzle
     {
         private Transform _muzzleTransform;
         private Transform _aimTransform;

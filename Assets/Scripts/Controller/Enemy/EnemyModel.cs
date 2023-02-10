@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace PlatformerMVC
 {
-    public class EnemyModel
+    public sealed class EnemyModel
     {
         public EnemyType _type;
         private Transform _fromPos;

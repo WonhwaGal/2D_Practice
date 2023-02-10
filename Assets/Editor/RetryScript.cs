@@ -16,6 +16,7 @@ namespace PlatformerMVC
                 PlayerPrefs.DeleteKey("LevelOne");
                 PlayerPrefs.DeleteKey("LevelTwo");
                 PlayerPrefs.DeleteKey("LevelThree");
+                PlayerPrefs.Save();
             }
             GUILayout.Space(10);
         }

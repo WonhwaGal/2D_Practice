@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace PlatformerMVC
 {
-    public class EnemyAI : IDisposable
+    public sealed class EnemyAI : IDisposable
     {
         private readonly EnemyView _enemyView;
         private readonly EnemyModel _model;

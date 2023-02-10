@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace PlatformerMVC
 {
-    public class LevelCompleteManager : IDisposable
+    public sealed class LevelCompleteManager : IDisposable
     {
         private readonly PlayerView _characterView;
         private readonly List<LevelObjectView> _deathZones;

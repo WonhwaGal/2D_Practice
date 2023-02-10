@@ -11,7 +11,7 @@ namespace PlatformerMVC
         AttackSpeed = 8,
         DieSpeed = 8,
     }
-    public class EnemyAnimator : IDisposable
+    public sealed class EnemyAnimator : IDisposable
     {
         public Action<SpriteRenderer, AnimState> OnPlayingOffAnimation { get; set; }
 

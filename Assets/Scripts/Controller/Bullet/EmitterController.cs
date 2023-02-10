@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace PlatformerMVC
 {
-    public class EmitterController
+    public sealed class EmitterController
     {
         private List<BullController> bulletControllers = new List<BullController>();
         private Transform _tr;

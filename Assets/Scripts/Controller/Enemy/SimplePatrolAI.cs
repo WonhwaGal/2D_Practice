@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace PlatformerMVC
 {
-    public class SimplePatrolAI
+    public sealed class SimplePatrolAI
     {
         #region Fields
         private readonly KidsView _view;

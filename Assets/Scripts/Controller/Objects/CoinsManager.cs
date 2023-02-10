@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace PlatformerMVC
 {
-    public class CoinsManager : IDisposable
+    public sealed class CoinsManager : IDisposable
     {
         private const float _animationsSpeed = 10;
         private readonly PlayerView _characterView;

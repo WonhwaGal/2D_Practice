@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace PlatformerMVC
 {
-    public class SpriteAnimationController : IDisposable
+    public sealed class SpriteAnimationController : IDisposable
     {
         public Action<SpriteRenderer, AnimState> onCancelAnimState;
         private sealed class Animation   // класс анимационного клипа

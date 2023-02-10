@@ -124,32 +124,7 @@ namespace PlatformerMVC
             _gameOverPanel.SetActive(true);
             _winImage.SetActive(true);
             _loseImage.SetActive(false);
-            int _resultScore = _coinScores[_currentLevel];
-            if (ReloadScript.Instance.HighestLevel == _currentLevel && _resultScore > 9)
-                ReloadScript.Instance.HighestLevel++;
-
-            PlayerPrefs.SetInt("Highest", ReloadScript.Instance.HighestLevel);
-            if (PlayerPrefs.HasKey("LevelOne"))
-            {
-                for (int i = 0; i < _coinScores.Count; i++)
-                {
-                    if (_coinScores[i] > ReloadScript.Instance.CoinNumbers[i])
-                    {
-                        ReloadScript.Instance.CoinNumbers[i] = _coinScores[i];
-                    }
-                }
-            }
-            else
-            {
-                for (int i = 0; i < _coinScores.Count; i++)
-                {
-                    ReloadScript.Instance.CoinNumbers[i] = _coinScores[i];
-                }
-
-            }
-            PlayerPrefs.SetInt("LevelOne", ReloadScript.Instance.CoinNumbers[0]);
-            PlayerPrefs.SetInt("LevelTwo", ReloadScript.Instance.CoinNumbers[1]);
-            PlayerPrefs.SetInt("LevelThree", ReloadScript.Instance.CoinNumbers[2]);
+            SaveProgress();
             ReloadMenu();
         }
 
@@ -164,6 +139,7 @@ namespace PlatformerMVC
                 _hearts[1].SetActive(false);
             }
         }
+
         public void AddStar(int indexOfStar)
         {
             bool progress = _stars.TrueForAll(value => value.activeInHierarchy);
@@ -188,6 +164,12 @@ namespace PlatformerMVC
                 _scoreText.text = _coinScores[_currentLevel].ToString();
             }
         }
+
+        private void SaveProgress()
+        {
+            ReloadScript.Instance.SaveProgress(_coinScores, _currentLevel);
+        }
+
         private void PauseGame()
         {
             _gameOverPanel.SetActive(true);
@@ -201,6 +183,7 @@ namespace PlatformerMVC
             _gameOverPanel.SetActive(false);
             Time.timeScale = 1.0f;
         }
+
         private void AsignButtons()
         {
             // Button functions

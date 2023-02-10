@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace PlatformerMVC
 {
-    public class CannonController
+    public sealed class CannonController
     {
         private readonly Transform _muzzleT;
         private readonly Transform _target;
