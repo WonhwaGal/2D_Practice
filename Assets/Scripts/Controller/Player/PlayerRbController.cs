@@ -165,31 +165,36 @@ namespace PlatformerMVC
                 _deadFromFall = false;
                 _startedJump = false;
             }
+
             if (_deadFromFall)
             {
                 _playerAnimator.AddandStartAnimation(_playerView._spriteRenderer, AnimState.Dead, true, _animationSpeed);
                 if (_contactPooler.IsGrounded) _rb.velocity = Vector2.zero;
                 else _rb.velocity = Vector2.down * 5;
             }
-            else if (_isSlide && _contactPooler.IsGrounded && !_deadFromFall)
+            else
             {
-                _playerT.up = new Vector3(Mathf.Lerp(_playerT.up.x, _contactPooler.Normal.x, Time.deltaTime*1.5f),         // turn while sliding
-                                          Mathf.Lerp(_playerT.up.y, _contactPooler.Normal.y, Time.deltaTime*1.5f), 0.0f);
-                _playerAnimator.AddandStartAnimation(_playerView._spriteRenderer, AnimState.Slide, true, _animationSpeed);
-                _playerHeadCollider.SetActive(false);
+                if (_isSlide && _contactPooler.IsGrounded)
+                {
+                    _playerT.up = new Vector3(Mathf.Lerp(_playerT.up.x, _contactPooler.Normal.x, Time.deltaTime * 1.5f),         // turn while sliding
+                                              Mathf.Lerp(_playerT.up.y, _contactPooler.Normal.y, Time.deltaTime * 1.5f), 0.0f);
+                    _playerAnimator.AddandStartAnimation(_playerView._spriteRenderer, AnimState.Slide, true, _animationSpeed);
+                    _playerHeadCollider.SetActive(false);
+                }
+                else if (_contactPooler.IsGrounded && !_slidingFromRight && !_slidingFromLeft) // eliminate sliding moments
+                {
+                    _playerHeadCollider.SetActive(true);
+                    _playerT.up = Vector3.up;        //
+                    _playerAnimator.AddandStartAnimation(_playerView._spriteRenderer, _isMoving ? AnimState.Walk : AnimState.Idle, true, _animationSpeed);
+                }
+                else if (_contactPooler.IsGrounded && (_slidingFromRight || _slidingFromLeft))    // check for sliding
+                {
+                    _playerT.up = new Vector3(Mathf.Lerp(_playerT.up.x, _contactPooler.Normal.x, Time.deltaTime * 1.5f),
+                                              Mathf.Lerp(_playerT.up.y, _contactPooler.Normal.y, Time.deltaTime * 1.5f), 0.0f);
+                    _playerAnimator.AddandStartAnimation(_playerView._spriteRenderer, AnimState.Slide, true, _animationSpeed);
+                }
             }
-            else if (_contactPooler.IsGrounded && !_slidingFromRight && !_slidingFromLeft && !_deadFromFall) // eliminate sliding moments
-            {
-                _playerHeadCollider.SetActive(true);
-                _playerT.up = Vector3.up;        //
-                _playerAnimator.AddandStartAnimation(_playerView._spriteRenderer, _isMoving ? AnimState.Walk : AnimState.Idle, true, _animationSpeed);
-            }
-            else if (_contactPooler.IsGrounded && !_deadFromFall && (_slidingFromRight || _slidingFromLeft))    // check for sliding
-            {
-                _playerT.up = new Vector3(Mathf.Lerp(_playerT.up.x, _contactPooler.Normal.x, Time.deltaTime * 1.5f),
-                                          Mathf.Lerp(_playerT.up.y, _contactPooler.Normal.y, Time.deltaTime * 1.5f), 0.0f);
-                _playerAnimator.AddandStartAnimation(_playerView._spriteRenderer, AnimState.Slide, true, _animationSpeed);
-            }
+
 
             if (_isMoving && !_deadFromFall)              // MOVEMENT SECTION
             {

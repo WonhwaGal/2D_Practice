@@ -41,6 +41,7 @@ namespace PlatformerMVC
 
             if (PlayerPrefs.HasKey("LevelThree")) CoinNumbers.Add(2, PlayerPrefs.GetInt("LevelThree"));
             else CoinNumbers.Add(2, 0);
+            PlayerPrefs.Save();
         }
         public void SaveProgress(Dictionary<int, int> coinScores, int currentLevel)
         {

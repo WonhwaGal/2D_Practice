@@ -15,23 +15,22 @@ namespace PlatformerMVC
         private readonly List<GameObject> _hearts;
 
         private readonly GameObject _menuPanel;
-        private readonly List<Button> _levels;
+        private readonly List<Button> _levelButtons;
 
         private readonly GameObject _gameOverPanel;
         private readonly Button _goMenuButton;
         private readonly Button _exitButton;
+        private readonly GameObject _loseImage;
+        private readonly GameObject _winImage;
 
         private TextMeshProUGUI _scoreText;
+        private TextMeshProUGUI _resultText;
+        private TextMeshProUGUI _goToMenuText;
 
         private int _currentLevel;
 
         private Dictionary<int, int> _coinScores = new Dictionary<int, int>();
         private List<LevelObjectView> _collectedCoins = new List<LevelObjectView>();
-
-        private TextMeshProUGUI _resultText;
-        private TextMeshProUGUI _goToMenuText;
-        private readonly GameObject _loseImage;
-        private readonly GameObject _winImage;
 
         private readonly PlayerRbController _characterControl;
         private readonly PlayerView _characterView;
@@ -45,7 +44,7 @@ namespace PlatformerMVC
             _stars = view._stars;
             _hearts = view._hearts;
             _menuPanel = view._menuPanel;
-            _levels = view._levels;
+            _levelButtons = view._levelButtons;
             _gameOverPanel = view._gameOverPanel;
             _goMenuButton = view._goMenuButton;
             _exitButton = view._exitButton;
@@ -111,7 +110,7 @@ namespace PlatformerMVC
         }
         private void Win()
         {
-            if (_currentLevel == _levels.Count - 1)
+            if (_currentLevel == _levelButtons.Count - 1)
             {
                 _resultText.text = "Отлично! Игра пройдена!";
                 _goToMenuText.text = "Меню";
@@ -187,10 +186,10 @@ namespace PlatformerMVC
         private void AsignButtons()
         {
             // Button functions
-            for (int i = 0; i < _levels.Count; i++)
+            for (int i = 0; i < _levelButtons.Count; i++)
             {
                 int _sceneToLoadIndex = i;
-                _levels[i].onClick.AddListener(() =>                   
+                _levelButtons[i].onClick.AddListener(() =>                   
                 {
                     _audioSource.PlayOneShot(_audioClip);
                     if (_sceneToLoadIndex == SceneManager.GetActiveScene().buildIndex && ReloadScript.Instance.LoadMenu)
@@ -234,18 +233,18 @@ namespace PlatformerMVC
         }
         private void ReloadMenu()
         {
-            for (int i = 0; i < _levels.Count; i++)
+            for (int i = 0; i < _levelButtons.Count; i++)
             {
                 int _sceneToLoadIndex = i;
                 if (!_coinScores.ContainsKey(_sceneToLoadIndex)) _coinScores.Add(_sceneToLoadIndex, 0);
 
                 if (_sceneToLoadIndex <= ReloadScript.Instance.HighestLevel)           // Score
                 {
-                    _levels[i].interactable = true;
-                    _levels[i].GetComponent<Image>().color = Color.white;
-                    for (int j = 0; j < _levels[i].transform.childCount; j++)
+                    _levelButtons[i].interactable = true;
+                    _levelButtons[i].GetComponent<Image>().color = Color.white;
+                    for (int j = 0; j < _levelButtons[i].transform.childCount; j++)
                     {
-                        Transform child = _levels[i].transform.GetChild(j);
+                        Transform child = _levelButtons[i].transform.GetChild(j);
                         if (child.TryGetComponent(out TextMeshProUGUI text))
                         {
                             text.color = Color.black;

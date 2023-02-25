@@ -576,18 +576,18 @@ MonoBehaviour:
   - {fileID: 1499765143927443950}
   - {fileID: 1499765142967157447}
   _menuPanel: {fileID: 1499765144765123601}
-  _levels:
+  _levelButtons:
   - {fileID: 7089014445640623605}
   - {fileID: 1899791794228161281}
   - {fileID: 4330470794469688470}
   _gameOverPanel: {fileID: 1499765144537106109}
   _goMenuButton: {fileID: 1499765144359644120}
   _exitButton: {fileID: 1499765143470233305}
+  _winImage: {fileID: 1499765144393601710}
+  _loseImage: {fileID: 1499765144094026925}
   _scoreText: {fileID: 862452864535828034}
   _resultText: {fileID: 1499765144066513116}
   _goToMenuText: {fileID: 1499765143862470794}
-  _winImage: {fileID: 1499765144393601710}
-  _loseImage: {fileID: 1499765144094026925}
 --- !u!1 &1499765142840846639
 GameObject:
   m_ObjectHideFlags: 0
