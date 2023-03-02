@@ -15,6 +15,7 @@ namespace PlatformerMVC
         [SerializeField] private List<RestartObjView> _restartingObjs;
         [SerializeField] private List<RestartObjView> _fullReloadObjs;
         [SerializeField] private GameObject _finishPlatform;
+
         [SerializeField] private QuestView _questView;
 
         private PlayerView _playerView;

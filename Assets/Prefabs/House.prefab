@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6088809824413596839}
   - component: {fileID: 6088809824413596856}
   m_Layer: 0
-  m_Name: Igloo_M_R_0001_20
+  m_Name: Igloo_M_R_0001_24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6088809824413596838}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.602, y: -0.593, z: -1.3473222}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.915, y: -0.222, z: -1.3473222}
+  m_LocalScale: {x: 0.7724515, y: 0.7724515, z: 0.7724515}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6088809825060024742}
@@ -72,10 +72,10 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 20
-  m_Sprite: {fileID: 21300000, guid: 784a3a0cfb9d8ea4b9566cf9e73ccec0, type: 3}
+  m_SortingOrder: 24
+  m_Sprite: {fileID: 21300000, guid: 53a1258efd579f948bff49f41ab2dbdc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -240,7 +240,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 24
+  m_SortingOrder: 28
   m_Sprite: {fileID: 21300000, guid: ec9e8f7f5473fc647872bb6d6e07f1ed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 6088809824767194698}
   - component: {fileID: 6088809824767194699}
   m_Layer: 0
-  m_Name: Igloo_M_Door_L_0001_20
+  m_Name: Igloo_M_Door_L_0001_25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -324,7 +324,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 21
+  m_SortingOrder: 25
   m_Sprite: {fileID: 21300000, guid: 66b19e70d0596b8488f78c3b6ddcd334, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -487,7 +487,7 @@ GameObject:
   - component: {fileID: 6088809825282162413}
   - component: {fileID: 6088809825282162414}
   m_Layer: 0
-  m_Name: arch_25
+  m_Name: arch_29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -548,7 +548,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 25
+  m_SortingOrder: 29
   m_Sprite: {fileID: 21300000, guid: 3492e966339c3574c96ad6980bbdf4a8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -571,7 +571,7 @@ GameObject:
   - component: {fileID: 6088809825309620914}
   - component: {fileID: 6088809825309620915}
   m_Layer: 0
-  m_Name: Igloo_Top_R_0001_20
+  m_Name: Igloo_Top_R_0001_24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -632,7 +632,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 20
+  m_SortingOrder: 24
   m_Sprite: {fileID: 21300000, guid: dbee1ced89f06d040b7b5765326e6b82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -739,7 +739,7 @@ GameObject:
   - component: {fileID: 6088809825386006994}
   - component: {fileID: 6088809825386006995}
   m_Layer: 0
-  m_Name: House_side_24
+  m_Name: House_side_27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -800,7 +800,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 24
+  m_SortingOrder: 27
   m_Sprite: {fileID: 21300000, guid: 687314dec6d345841b8424d21b6929ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -823,7 +823,7 @@ GameObject:
   - component: {fileID: 6088809825472988819}
   - component: {fileID: 6088809825472988820}
   m_Layer: 0
-  m_Name: Snow_G_M_0001_24
+  m_Name: Snow_G_M_0001_28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -887,7 +887,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 24
+  m_SortingOrder: 28
   m_Sprite: {fileID: 21300000, guid: ec9e8f7f5473fc647872bb6d6e07f1ed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1055,7 +1055,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 24
+  m_SortingOrder: 28
   m_Sprite: {fileID: 21300000, guid: ec9e8f7f5473fc647872bb6d6e07f1ed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1139,7 +1139,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 24
+  m_SortingOrder: 28
   m_Sprite: {fileID: 21300000, guid: ec9e8f7f5473fc647872bb6d6e07f1ed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1246,7 +1246,7 @@ GameObject:
   - component: {fileID: 6088809826250263511}
   - component: {fileID: 6088809826250263080}
   m_Layer: 0
-  m_Name: Igloo_M_L_0001-UpperLeft_24
+  m_Name: Igloo_M_L_0001-UpperLeft_27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1307,7 +1307,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 24
+  m_SortingOrder: 27
   m_Sprite: {fileID: 21300000, guid: eb06584eb15894c4fa6cd0401717063a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

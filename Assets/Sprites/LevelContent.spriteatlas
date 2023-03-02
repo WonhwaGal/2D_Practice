@@ -45,7 +45,6 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 8a246fe8fa0c09945b08ad1a1081b75b, type: 3}
-    - {fileID: 2800000, guid: c3a67455228ace54fa3099f5f2212f6e, type: 3}
     - {fileID: 102900000, guid: 5fdcfb2b43864044491bf464bb8e16c2, type: 3}
     - {fileID: 102900000, guid: 09244409cc3835446920dce137d972bd, type: 3}
     - {fileID: 2800000, guid: 2810e982e863c1c44afb80f96fea7cd3, type: 3}
@@ -82,7 +81,6 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 6ba49115e08fb8f4993d83ff131344ff, type: 3}
   - {fileID: 21300000, guid: 2cdd32157426e2a41bf9f6458c817a2f, type: 3}
   - {fileID: 21300000, guid: 46f53a456f6630c48939a8e43d1dd3d8, type: 3}
-  - {fileID: 21300000, guid: c3a67455228ace54fa3099f5f2212f6e, type: 3}
   - {fileID: 21300000, guid: 1b5f6e65e18ef0849bc5f9aa181467c1, type: 3}
   - {fileID: 21300000, guid: aa5be09574800cc45b5b43e3da7ee477, type: 3}
   - {fileID: 21300000, guid: 29efa695e51321840b19ab1452b51176, type: 3}
@@ -141,7 +139,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 28851adfb086f3b4eb8f4d27f415d2dd, type: 3}
   m_PackedSpriteNamesToIndex:
   - iceWater
-  - penguin
+  - penguinIcon
   - chain
   - penguin_idle_01
   - penguin_atack_03
@@ -160,7 +158,6 @@ SpriteAtlas:
   - penguin_walk_08-bow
   - sign
   - penguin_walk_05
-  - mountains
   - penguin_preslide_01
   - starFull
   - penguin_idle_04

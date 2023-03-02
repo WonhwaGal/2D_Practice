@@ -99,6 +99,7 @@ namespace PlatformerMVC
             _goMenuButton.onClick.AddListener(() =>
             {
                 _audioSource.PlayOneShot(_audioClip);
+                Time.timeScale = 1.0f;
                 ReloadScript.Instance.LoadMenu = false;
                 SceneManager.LoadScene(_currentLevel);
             });
@@ -194,7 +195,8 @@ namespace PlatformerMVC
                     _audioSource.PlayOneShot(_audioClip);
                     if (_sceneToLoadIndex == SceneManager.GetActiveScene().buildIndex && ReloadScript.Instance.LoadMenu)
                     {
-                        _menuPanel.SetActive(false);
+                        //_menuPanel.SetActive(false);
+                        SceneManager.LoadScene(_sceneToLoadIndex);
                         Time.timeScale = 1.0f;
                         ReloadScript.Instance.LoadMenu = false;
                     }
@@ -206,6 +208,7 @@ namespace PlatformerMVC
                     }
                 });
             }
+
             _goMenuButton.onClick.AddListener(() =>
             {
                 _audioSource.PlayOneShot(_audioClip);
