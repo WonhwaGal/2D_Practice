@@ -96,7 +96,6 @@ namespace PlatformerMVC
                 if (_tries <= 0)
                 {
                     onLosing?.Invoke();
-                    Debug.Log("LOST");
                 }
                 else
                 {

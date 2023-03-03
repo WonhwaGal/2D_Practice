@@ -218,8 +218,15 @@ namespace PlatformerMVC
             _exitButton.onClick.AddListener(() =>
             {
                 _audioSource.PlayOneShot(_audioClip);
+#if UNITY_EDITOR
+                if (UnityEditor.EditorApplication.isPlaying) UnityEditor.EditorApplication.isPlaying = false;
+#elif UNITY_STANDALONE
                 Application.Quit();
+#elif UNITY_WEBGL
+                _exitButton.interactable = false;
+#endif
             });
+
             ReloadMenu();
         }
         private void ColorChildren(TextMeshProUGUI text, Color color)

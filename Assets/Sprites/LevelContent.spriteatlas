@@ -131,6 +131,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 99228d2e5fa03224990eba79c10c7b4d, type: 3}
   - {fileID: 21300000, guid: 8b71374e11051274cad4060dbe35221b, type: 3}
   - {fileID: 21300000, guid: 8bd8a87ef1d4a5c45a119c9abdfb08af, type: 3}
+  - {fileID: 21300000, guid: 53a1258efd579f948bff49f41ab2dbdc, type: 3}
   - {fileID: 21300000, guid: 687314dec6d345841b8424d21b6929ef, type: 3}
   - {fileID: 21300000, guid: d00a97fec0ddfde49bb6a9ae8d67a45b, type: 3}
   - {fileID: 21300000, guid: 0dda9efeece02c3488735399dbffb0cd, type: 3}
@@ -208,6 +209,7 @@ SpriteAtlas:
   - IcePanel
   - penguin_walk_06-bow
   - penguin_slide_01
+  - Igloo_M_L_0001(2)
   - House_side
   - penguin_jump_01
   - penguin_atack_02
