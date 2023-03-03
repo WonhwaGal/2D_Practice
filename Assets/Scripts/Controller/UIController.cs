@@ -1,9 +1,9 @@
+using TMPro;
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 using UnityEngine.SceneManagement;
-using TMPro;
 
 namespace PlatformerMVC
 {
@@ -93,8 +93,8 @@ namespace PlatformerMVC
             {
                 heart.SetActive(false);
             }
-            _resultText.text = "Увы...";
-            _goToMenuText.text = "Заново";
+            _resultText.text = "Oops...";
+            _goToMenuText.text = "Again";
             _goMenuButton.onClick.RemoveAllListeners();
             _goMenuButton.onClick.AddListener(() =>
             {
@@ -113,13 +113,13 @@ namespace PlatformerMVC
         {
             if (_currentLevel == _levelButtons.Count - 1)
             {
-                _resultText.text = "Отлично! Игра пройдена!";
-                _goToMenuText.text = "Меню";
+                _resultText.text = "Perfect! You won the game!";
+                _goToMenuText.text = "Menu";
             }
             else
             {
-                _resultText.text = "Ура!!!";
-                _goToMenuText.text = "Дальше";
+                _resultText.text = "Well done!";
+                _goToMenuText.text = "Next";
             }
             _gameOverPanel.SetActive(true);
             _winImage.SetActive(true);
@@ -176,7 +176,7 @@ namespace PlatformerMVC
             Time.timeScale = 0.0f;
             _winImage?.SetActive(false);
             _loseImage?.SetActive(false);
-            _resultText.text = "Чтобы вернуться, нажми ESC";
+            _resultText.text = "To continue press ESC";
         }
         private void UnpauseGame()
         {
